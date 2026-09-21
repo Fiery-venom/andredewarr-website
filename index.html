@@ -38,11 +38,18 @@
     .book-card img{width:100%;aspect-ratio:2/3;object-fit:cover}.book-body{padding:22px}.book-body p{color:var(--muted);margin:8px 0 0}
     .placeholder{display:inline-block;margin-top:16px;padding:10px 15px;background:#eee7dc;border-radius:999px;color:#5c6470;font-size:13px;font-weight:700}
     .dark{background:var(--night);color:#fff}.dark .eyebrow{color:var(--gold)}
-    .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px}.about p{color:#d0d7df;font-size:20px}
+    .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}
+    .about p{color:#d0d7df;font-size:20px}
+    .author-photo{border-radius:22px;overflow:hidden;box-shadow:0 18px 50px #0005}
+    .author-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+    .journey{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center}
+    .journey-photo{border-radius:22px;overflow:hidden;box-shadow:0 16px 42px #0002}
+    .journey-photo img{width:100%;aspect-ratio:16/9;object-fit:cover}
+    .journey-copy p{color:var(--muted);font-size:18px}
     .news{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 12px 34px #0000000f}.news p{color:var(--muted);font-size:17px}
     .socials{display:flex;gap:12px;flex-wrap:wrap}.socials a{background:#e7e0d6;padding:10px 16px;border-radius:999px;font-weight:700;color:#5b6470;text-decoration:none}.socials a:hover{background:#d9d0c4;color:#101722}
     footer{background:#10161d;color:#c7cfd7;padding:28px 0}footer .wrap{display:flex;justify-content:space-between;gap:16px}footer p{margin:0;color:#929ca8;font-size:14px}
-    @media(max-width:980px){.hero-grid,.about{grid-template-columns:1fr}.book-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:980px){.hero-grid,.about,.journey{grid-template-columns:1fr}.book-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:640px){header .wrap{flex-direction:column;align-items:flex-start}.book-grid{grid-template-columns:1fr}footer .wrap{flex-direction:column}}
   </style>
 </head>
@@ -117,10 +124,27 @@
 
 <section class="dark" id="about">
   <div class="wrap about">
-    <div><p class="eyebrow">About the Author</p><h2>André De Warr</h2></div>
+    <div class="author-photo">
+      <img src="author-writing.jpg" alt="André De Warr writing at a table">
+    </div>
     <div>
-      <p>André De Warr writes character-led stories about life, family, struggle, hope and the roads that shape people.</p>
-      <p>From personal reflection to emotional fiction and travel, his books explore the choices, journeys and experiences that stay with us.</p>
+      <p class="eyebrow">About the Author</p>
+      <h2>André De Warr</h2>
+      <p>André De Warr writes stories shaped by life, family, struggle, hope and the roads people travel.</p>
+      <p>His books range from personal reflection and emotional fiction to journeys inspired by travel and the open road.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap journey">
+    <div class="journey-photo">
+      <img src="author-travel.jpg" alt="André De Warr beside a loch with mountains in the distance">
+    </div>
+    <div class="journey-copy">
+      <p class="eyebrow">Beyond the Page</p>
+      <h2>Stories inspired by the journey</h2>
+      <p>Travel, changing landscapes and the open road are recurring parts of André's writing, from reflective moments to the journey at the heart of <em>Northbound</em>.</p>
     </div>
   </div>
 </section>
