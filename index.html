@@ -1,1 +1,133 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official website of author André De Warr. Explore books, releases and author updates.">
+  <title>André De Warr | Author</title>
+  <style>
+    :root{
+      --ink:#101722;--muted:#5f6b79;--paper:#f4f0e8;--line:#ddd5c8;
+      --white:#fff;--accent:#a34f39;--accent-dark:#7e3d2c;--night:#17212c;--gold:#d8b06b
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    img{max-width:100%;display:block} a{color:inherit}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(244,240,232,.96);border-bottom:1px solid #0001;backdrop-filter:blur(10px)}
+    header .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 0}
+    .brand{text-decoration:none}.brand strong{display:block;font:700 28px/1 Georgia,serif}.brand span{display:block;margin-top:4px;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);font-weight:700}
+    nav{display:flex;gap:24px;flex-wrap:wrap}nav a{text-decoration:none;font-size:14px;font-weight:700}
+    .hero{padding:86px 0 70px;background:radial-gradient(circle at 80% 20%,#d8b06b47,transparent 26%),linear-gradient(135deg,#faf6ef,#eee5d7)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+    .eyebrow{margin:0 0 14px;color:var(--accent);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.18em}
+    h1,h2,h3{font-family:Georgia,serif;line-height:1.05;margin:.18em 0}h1{font-size:clamp(50px,7vw,90px);max-width:10ch}h2{font-size:clamp(34px,5vw,58px)}h3{font-size:28px}
+    .lead{max-width:660px;font-size:20px;color:#4e5965}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;text-decoration:none;font-weight:700}
+    .primary{background:var(--accent);color:#fff}.primary:hover{background:var(--accent-dark)}.secondary{border:1px solid #a9a093;background:#ffffff88}
+    .feature{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 18px 50px #10172221}
+    .feature img{width:100%;aspect-ratio:2/3;object-fit:cover}.feature-body{padding:24px}
+    .status{color:var(--accent);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
+    main section{padding:78px 0}.intro{max-width:760px;margin-bottom:36px}.intro p{color:var(--muted);font-size:18px}
+    .book-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.book-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 12px 34px #0001}
+    .book-card img{width:100%;aspect-ratio:2/3;object-fit:cover}.book-body{padding:22px}.book-body p{color:var(--muted);margin:8px 0 0}
+    .placeholder{display:inline-block;margin-top:16px;padding:10px 15px;background:#eee7dc;border-radius:999px;color:#5c6470;font-size:13px;font-weight:700}
+    .dark{background:var(--night);color:#fff}.dark .eyebrow{color:var(--gold)}.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px}.about p{color:#d0d7df;font-size:20px}
+    .news{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 12px 34px #0000000f}.news p{color:var(--muted);font-size:17px}
+    .socials{display:flex;gap:12px;flex-wrap:wrap}.socials span{background:#e7e0d6;padding:10px 16px;border-radius:999px;font-weight:700;color:#5b6470}
+    footer{background:#10161d;color:#c7cfd7;padding:28px 0}footer .wrap{display:flex;justify-content:space-between;gap:16px}footer p{margin:0;color:#929ca8;font-size:14px}
+    @media(max-width:980px){.hero-grid,.about{grid-template-columns:1fr}.book-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){header .wrap{flex-direction:column;align-items:flex-start}.book-grid{grid-template-columns:1fr}footer .wrap{flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#home"><strong>André De Warr</strong><span>Author</span></a>
+    <nav><a href="#books">Books</a><a href="#about">About</a><a href="#news">News</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
 
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Official Author Website</p>
+      <h1>Stories shaped by family, journeys and difficult choices.</h1>
+      <p class="lead">Welcome to the official website of André De Warr. Explore the books, follow the latest release, and keep up with author updates.</p>
+      <div class="buttons"><a class="btn primary" href="#books">Explore the books</a><a class="btn secondary" href="#news">Latest news</a></div>
+    </div>
+    <article class="feature">
+      <img src="northbound.png" alt="Northbound book cover">
+      <div class="feature-body">
+        <div class="status">Featured release · 22 September 2026</div>
+        <h3>Northbound</h3>
+        <p>A motorcycle journey through Europe, heading north through dramatic scenery, distance and discovery.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="books">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow">Books</p>
+      <h2>Books by André De Warr</h2>
+      <p>Published titles and the current release.</p>
+    </div>
+    <div class="book-grid">
+      <article class="book-card">
+        <img src="troubles.jpg" alt="The Troubles and Tribulations in the Life of a Nobody book cover">
+        <div class="book-body">
+          <div class="status">Available now</div>
+          <h3>The Troubles and Tribulations in the Life of a Nobody</h3>
+          <p>A personal, reflective story shaped by anger, regret, prison, loss, redemption and hope.</p>
+          <span class="placeholder">Amazon link to be added</span>
+        </div>
+      </article>
+      <article class="book-card">
+        <img src="long-road.jpg" alt="The Long Road Home book cover">
+        <div class="book-body">
+          <div class="status">Available now</div>
+          <h3>The Long Road Home</h3>
+          <p>An emotional story about family, consequences and the long journey back to what matters most.</p>
+          <span class="placeholder">Amazon link to be added</span>
+        </div>
+      </article>
+      <article class="book-card">
+        <img src="northbound.png" alt="Northbound book cover">
+        <div class="book-body">
+          <div class="status">Releases 22 September 2026</div>
+          <h3>Northbound</h3>
+          <p>A motorcycle journey through Europe, heading north through dramatic scenery, distance and discovery.</p>
+          <span class="placeholder">Amazon link to be added</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="about">
+  <div class="wrap about">
+    <div><p class="eyebrow">About the Author</p><h2>André De Warr</h2></div>
+    <div><p>André De Warr writes character-led stories about life, family, struggle, hope and the roads that shape people.</p><p>Your full author biography and author photograph can be added here next.</p></div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="wrap">
+    <div class="intro"><p class="eyebrow">Latest News</p><h2>Northbound arrives 22 September</h2></div>
+    <div class="news"><p><strong>Northbound</strong> is the featured release. Amazon purchase links can be added as soon as you are ready.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="intro"><p class="eyebrow">Keep in Touch</p><h2>Follow André De Warr</h2><p>Your official social links can be added next.</p></div>
+    <div class="socials"><span>Facebook</span><span>Instagram</span><span>YouTube</span></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><strong>André De Warr — Author</strong><p>© 2026 André De Warr. All rights reserved.</p></div></footer>
+</body>
+</html>
